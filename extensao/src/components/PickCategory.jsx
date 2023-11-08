@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { QuizContext } from "../context/quiz";
 
-import Category from "../img/category.svg";
+import Category from "../img/category.png";
 
 import "./PickCategory.css";
 
@@ -18,7 +18,6 @@ const PickCategory = () => {
   return (
     <div id="category">
       <h2>Escolha uma categoria</h2>
-      <p>As perguntas serão referentes ao Campus Paulista:</p>
       {quizState.questions.map((question) => (
         <button
           onClick={() => chooseCategoryAndReorderQuestions(question.category)}

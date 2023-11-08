@@ -3,10 +3,11 @@ import { QuizContext } from "../context/quiz";
 
 import "./Welcome.css";
 
-import Quiz from "../img/quiz.jpg";
+import Quiz from "../img/quiz.png";
 
 import ExportPDFButton from "./pdfInformacoes";
 import ExportPDFButtonTutorial from "./pdfTutorial";
+import ExportPDFButtonEquipe from "./pdfEquipe";
 
 const Welcome = () => {
   const [quizState, dispatch] = useContext(QuizContext);
@@ -20,6 +21,7 @@ const Welcome = () => {
               <button onClick={() => dispatch({type: "CHANGE_STAGE"})}>Iniciar Jogo</button>
               <ExportPDFButtonTutorial />
               <ExportPDFButton />
+              <ExportPDFButtonEquipe />
             </div>
       </div>
     </div>
